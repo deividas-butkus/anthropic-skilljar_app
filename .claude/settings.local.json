@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(uv venv *)"
+      "Bash(uv venv *)",
+      "PowerShell(.venv\\\\Scripts\\\\python.exe -m pytest tests/test_document.py -v)",
+      "Bash(uv run *)",
+      "PowerShell(uv run *)",
+      "PowerShell(.venv\\\\Scripts\\\\python.exe -c \"from tools.document import document_path_to_markdown; print\\(document_path_to_markdown\\('tests/fixtures/mcp_docs.docx'\\)\\)\")"
     ]
   }
 }
